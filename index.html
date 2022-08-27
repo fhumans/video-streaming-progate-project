@@ -5,6 +5,8 @@
         <title></title>
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="responsive.css">
     </head>
     <body>
         <header>
@@ -12,31 +14,36 @@
                 <div class="header-logo">
                     <img class="logo" src="img\logo.png" alt="">
                 </div>
+
+                <div class="header-left">
+                    <span class="fa fa-bars menu-icon"></span>
+                </div>
+
                 <div class="header-menu">
                     <ul>
                         <li><a class="list home" href="#">
                             <span class="fa fa-home fa-lg"></span>
                             Home</a>
                         </li>
-                        <li><a class="list" href="#">
+                        <li><a class="list gone2" href="#">
                             <span class="fa solid fa-film fa-lg"></span>
                             Movie</a>
                         </li>
-                        <li><a class="list" href="#">
+                        <li><a class="list gone2" href="#">
                             <span class="fas fa-theater-masks fa-lg"></span>
                             Drama</a>
                         </li>
-                        <li><a class="list" href="#">
+                        <li><a class="list gone2" href="#">
                             <span class="fab fa-youtube fa-lg"></span>
                             Music Video</a>
                         </li>
-                        <li><a class="list" href="#">
+                        <li><a class="list gone1" href="#">
                             <span class="fa solid fa-tv fa-lg"></span>
                             Live Show</a>
                         </li>
-                        <li><a class="list" href="#">
+                        <li><a class="list gone1" href="#">
                             <span class="fas fa-video fa-lg"></span>
-                            Comedies</a>
+                            Comedy</a>
                         </li>
                     </ul>
                 </div>
@@ -51,7 +58,7 @@
                     <p>Enjoy exclusive Music Video popular movies and Live shows.<br>Subscribe <strong>Cavimov</strong> now</bold></p>
                  
                     <div class="btn-wrapper">
-                        <input class="btn number" type="number" >
+                        <input class="input number" type="email" placeholder="Email" >
                         <input class="btn submit" type="button" value="Subscribe">
                        
                     </div>
@@ -62,20 +69,26 @@
         <div class="most-popular">
             <div class="container">
                 <div class="heading">
-                    <h1>Most Popular</h1> 
-                    <a href="#">See all
-                        <span class="fa light fa-arrow-right"></span>
-                    </a>
+                    <div class="heading-left">
+                        <h1>Most Popular</h1> 
+                    </div>
+                    <div class="heading-right">
+                        <a href="#">See all
+                            <span class="fa light fa-arrow-right"></span>
+                        </a>
+                    </div>
                 </div>
                 <ul class="populars">
-                    <li class="pop"><img src="img/populer/pop1.png" alt=""> Wanda vision</li>
-                    <li class="pop"><img src="img/populer/pop2.png" alt=""> Wanda vision</li>
-                    <li class="pop"><img src="img/populer/pop3.png" alt=""> Wanda vision</li>
-                    <li class="pop"><img src="img/populer/pop4.png" alt=""> Wanda vision</li>
-                    <li class="pop"><img src="img/populer/pop5.png" alt=""> Wanda vision</li>
-                    <li class="pop"><img src="img/populer/pop6.png" alt=""> Wanda vision</li>
-                    <li class="pop"><img src="img/populer/pop7.png" alt=""> Wanda vision</li>
-                    <li class="pop"><img src="img/populer/pop7.png" alt=""> Wanda vision</li>
+                    <li class="pop"><img src="img/populer/pop1.png" alt="">Avengers: End Games</li>
+                    <li class="pop"><img src="img/populer/pop2.png" alt="">Spider-man: No Way Home</li>
+                    <li class="pop"><img src="img/populer/pop3.png" alt="">Doctor Strange in The Multiverse of Madness</li>
+                    <li class="pop"><img src="img/populer/pop4.png" alt=""><br>Every Thing Every Where All At Once</li>
+                    <li class="pop"><img src="img/populer/pop5.png" alt="">Morbius</li>
+                    <li class="pop"><img src="img/populer/pop6.png" alt=""><br>Top Gun Maverick</li>
+                    <li class="pop"><img src="img/populer/pop7.png" alt="">Jurassic World: Dominion</li>
+                    <li class="pop"><img src="img/populer/pop8.png" alt=""><br>The King's Man</li>
+                    <li class="pop"><img src="img/populer/pop9.png" alt="">Lightyear</li>
+                    <li class="pop"><img src="img/populer/pop10.png" alt=""><br>Snake Eyes: G.I. Joe Origin</li>
                 </ul>
             </div>
         </div>
@@ -83,17 +96,22 @@
         <div class="movies-for-you">
             <div class="container">
                 <div class="heading">
-                    <h1>Movies for you</h1> 
-                    <a href="#">See all
-                        <span class="fa light fa-arrow-right"></span>
-                    </a>
+                    <div class="heading-left">
+                        <h1>Movies for you</h1> 
+                    </div>
+                    <div class="heading-right">
+                        <a href="#">See all
+                            <span class="fa light fa-arrow-right"></span>
+                        </a>
+                    </div>
                 </div>
                 <ul class="movies">
-                    <li class="mov"><img src="img/movies/movies1.png" alt=""> Wanda vision</li>
-                    <li class="mov"><img src="img/movies/movies2.png" alt=""> Wanda vision</li>
-                    <li class="mov"><img src="img/movies/movies3.png" alt=""> Wanda vision</li>
-                    <li class="mov"><img src="img/movies/movies4.png" alt=""> Wanda vision</li>
-                    <li class="mov"><img src="img/movies/movies5.png" alt=""> Wanda vision</li>
+                    <li class="mov"><img src="img/movies/movies1.png" alt="">Every Thing Every Where All At Once</li>
+                    <li class="mov"><img src="img/movies/movies2.png" alt="">Doctor Strange in The Multiverse of Madness</li>
+                    <li class="mov"><img src="img/movies/movies3.png" alt="">Spider-man: No Way Home</li>
+                    <li class="mov"><img src="img/movies/movies4.png" alt="">Avengers: End Games</li>
+                    <li class="mov"><img src="img/movies/movies5.png" alt=""><br>The Batman</li>
+                    <li class="mov"><img src="img/movies/movies6.png" alt="">Shang-Chi and the Legend of the Ten Rings</li>
                 </ul>               
             </div>
         </div>

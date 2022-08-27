@@ -14,7 +14,6 @@ body{
 
 li{
     list-style: none;
-    padding: 25px 10px;
     float:left;
 } 
 
@@ -27,12 +26,13 @@ header{
     background-color: black;
     margin: 0px;
     position: fixed;
+    height: 80px;
 }
 
 .container{
-    width:1730px;
+    width:1880px;
     color:white;
-    padding: 0 150px;
+    padding: 0 30px;
     margin: 0 auto;
 }
 .header-logo{
@@ -40,16 +40,34 @@ header{
 }
 .header-menu a{
     font-size: 17px;
+    padding-right: 15px;
     color:white;
     opacity: 0.7;
 }
+
+header .header-menu li {
+    line-height: 50px;
+}
+
+.header-left{
+    display: none;
+}
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    /* Gantikan property display ke none */
+    display: none;
+}
+
 .list:hover{
     opacity: 1;
     color: white;
 }
 
 .logo{
-    padding-top:12px;
+    margin-top: 5px;
     margin-right: 30px;
     width: 200px;
 }
@@ -87,18 +105,41 @@ header{
     line-height: 30px;
     font-size: 20px;
 }
+
+input{
+    font-weight: bold;
+}
+
+.btn{
+    border: 0;
+    border-radius: 4px;
+    opacity: 0.8;
+    text-align: center;
+    padding: 12px 24px;
+    display: inline-block;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
 .submit {
     padding:15px 30px;
     background-color: red;
-    color: white;
-   
+    color: white; 
+    cursor: pointer;
+    box-shadow: 0 7px #500d0b;
 }
+
+.submit:active{
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
 .number{
     padding:17px 70px;
     
-}
-.btn{
-    border-radius: 4px;
 }
 
 /*-webkit-filter: blur(2px); 
@@ -109,37 +150,43 @@ header{
 }
 
 .heading {
+    display: flex;
     margin: 0;
-    /* display: inline-block; */
     width: 100%;
 }
 
 
-.heading h1 {
+.heading-left h1 {
+    float: left;
     margin-bottom: 0;
     margin-top: 0;
+    width: 300px;
 }
 
-.heading a {
+.heading-right a {
     float: right;
+    line-height: 37px;
     color: #fff;
+    margin-left: 1444px;
 }
- 
+
     
 .populars {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
 }
 
 .pop img {
-    width: 163px;
+    width: 160px;
+    padding-bottom: 10px;
 }
 
 .populars li {
-    padding:20px 18px 10px 0;
     text-align: center;
     font-size: 15px;
-    line-height: 25px;
+    flex: auto;
+    width: 10%;
 }
 
 .fa-arrow-right {
@@ -152,17 +199,21 @@ header{
 
 .movies {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
+    padding-bottom: 120px;
 }
 
 .mov img {
-    width: 268px;
+    width: 284px;
+    padding-bottom: 10px;
 }
 
 .movies li {
     font-size: 15px;
-    line-height: 25px;
-    text-align: left;
+    text-align: center;
+    flex: auto;
+    width: 10%;
 }
 
 footer {
